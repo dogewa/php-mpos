@@ -13,7 +13,7 @@
             {if $type == 'Debit_MP'}手动提现{/if}
             {if $type == 'Debit_AP'}自动提现{/if}
             {if $type == 'Donation_PPS'}捐赠{/if}
-            {if $type == 'TXFee'}提现交易费（DogeCoin网络）{/if}
+            {if $type == 'TXFee'}提现交易费（钱包网络）{/if}
           </th>
         {/foreach}
       </tr>
