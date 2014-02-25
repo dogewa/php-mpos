@@ -16,7 +16,7 @@
                       <td align="right">{$GLOBAL.userdata.sharerate|number_format:"2"} S/s</td>
                     </tr>
                     <tr>
-                      <td colspan="2"><b><u>Unpaid Shares</u></b> <span id='tt'><img src='{$PATH}/images/questionmark.png' height='15px' width='15px' title='Submitted shares between the last 120 confirms block until now.'></span></td>
+                      <td colspan="2"><b><u>Unpaid Shares</u></b> <span id='tt'><img src='http://lot.iwakuang.com/site_assets/mpos/images/questionmark.png' height='15px' width='15px' title='Submitted shares between the last 120 confirms block until now.'></span></td>
                     </tr>
                     <tr>
                       <td><b>Your Valid<b></td>
@@ -27,7 +27,7 @@
                       <td align="right"><i>{$GLOBAL.roundshares.valid|number_format}</i> <font size='1px'></font></b></td>
                     </tr>
                     <tr>
-                      <td colspan="2"><b><u>Round Shares</u></b> <span id='tt'><img src='{$PATH}/images/questionmark.png' height='15px' width='15px' title='Submitted shares since last found block (ie. round shares)'></span></td>
+                      <td colspan="2"><b><u>Round Shares</u></b> <span id='tt'><img src='http://lot.iwakuang.com/site_assets/mpos/images/questionmark.png' height='15px' width='15px' title='Submitted shares since last found block (ie. round shares)'></span></td>
                     </tr>
                     <tr>
                       <td><b>Pool Valid</b></td>
