@@ -12,7 +12,7 @@
   <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 	<link rel="stylesheet" href="http://lot.iwakuang.com/site_assets/mpos/css/visualize.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="http://lot.iwakuang.com/site_assets/mpos/css/custom.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="{$PATH}/css/jquery.jqplot.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="http://lot.iwakuang.com/site_assets/mpos/css/jquery.jqplot.min.css" type="text/css" media="screen" />
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="http://lot.iwakuang.com/site_assets/mpos/css/ie.css" type="text/css" media="screen" />
 	<script src="http://lot.iwakuang.com/site_assets/mpos/js/html5.js"></script>
