@@ -31,7 +31,7 @@
         </li>
           <table width="50%">
             <tbody>
-              <tr><td>STRATUM:</td><td style="color:red"><kbd>stratum+tcp://stratum.iwakuang.com</kbd></td></tr>
+              <tr><td>STRATUM:</td><td style="color:red"><kbd>stratum+tcp://{$SITESTRATUMSERVER|default:""}</kbd></td></tr>
               <tr><td>端口:</td><td style="color:red"><kbd>{$SITESTRATUMPORT|default:"3333"}</kbd></td></tr>
               <tr><td>矿工:</td><td style="color:red"><kbd><em>用户名</em>.<em>矿工名</em></kbd></td></tr>
               <tr><td>矿工密码:</td><td style="color:red"><kbd>*******</kbd></td></tr>
@@ -39,7 +39,7 @@
           </table>
         <li>
           <p>如果您用的是命令行的方式，如下:</p>
-          <pre>./cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if} -o stratum+tcp://stratum.iwakuang.com:{$SITESTRATUMPORT|default:"3333"} -u <em>用户名</em>.<em>矿工名</em> -p <em>矿工密码</em></pre>
+          <pre>./cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if} -o stratum+tcp://{$SITESTRATUMSERVER|default:""}:{$SITESTRATUMPORT|default:"3333"} -u <em>用户名</em>.<em>矿工名</em> -p <em>矿工密码</em></pre>
         </li>
         </ul>
     </li>
