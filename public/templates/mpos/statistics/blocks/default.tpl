@@ -1,4 +1,5 @@
-{if $smarty.session.AUTHENTICATED|default:"0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $GLOBAL.userdata.is_vip)}
+{$GLOBAL.userdata.is_vip}
+{if $smarty.session.AUTHENTICATED|default:"0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $GLOBAL.userdata.is_vip == 1)}
   {include file="statistics/blocks/block_shares_graph.tpl"}
 
   {include file="statistics/blocks/block_overview_time.tpl"}
