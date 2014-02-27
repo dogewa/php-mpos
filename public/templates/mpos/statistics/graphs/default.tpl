@@ -1,3 +1,4 @@
+{if $smarty.session.AUTHENTICATED|default:"0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $GLOBAL.userdata.is_vip == 1)}
 <article class="module width_full">
   <header>
     <h3 class="tabs_involved">统计</h3>
@@ -13,3 +14,4 @@
 {include file="{$smarty.request.page|escape}/{$smarty.request.action|escape}/both.tpl"}
   </div>
 </article>
+{/if}
