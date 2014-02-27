@@ -70,7 +70,7 @@
     {/if}
 
 
-    {if $smarty.session.AUTHENTICATED|default: "0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $GLOBAL.userdata.is_vip)}
+    {if $smarty.session.AUTHENTICATED|default: "0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $GLOBAL.userdata.is_vip == 1)}
       <h3 style="color:red">VIP统计</h3>
       <ul class="toggle">
         <li class="icon-th-large"><a href="{$smarty.server.PHP_SELF}?page=statistics&action=blocks">爆块详细统计</a></li>
