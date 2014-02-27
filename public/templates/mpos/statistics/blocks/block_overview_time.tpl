@@ -4,21 +4,21 @@
     <thead>
         <tr>
           <th align="left"></th>
-          <th align="center">Gen Est.</th>
-          <th align="center">Found</th>
-          <th align="center">Valid</th>
-          <th align="center">Orphan</th>
-          <th align="center">Avg Diff</th>
-          <th align="center">Shares Est.</th>
-          <th align="center">Shares</th>
-          <th align="center">Percentage</th>
-          <th align="center">Amount</th>
-          <th align="center">Rate Est.</th>
+          <th align="center">预估总块数</th>
+          <th align="center">挖到块数</th>
+          <th align="center">已确认</th>
+          <th align="center">孤立</th>
+          <th align="center">平均难度</th>
+          <th align="center">预估贡献</th>
+          <th align="center">实际贡献</th>
+          <th align="center">比例</th>
+          <th align="center">币量</th>
+          <th align="center">爆块占比</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-          <th align="left" style="padding-left: 15px">All Time</td>
+          <th align="left" style="padding-left: 15px">至今</td>
           <td align="center">{($FIRSTBLOCKFOUND / $COINGENTIME)|number_format:"0"}</td>
           <td align="center">{$LASTBLOCKSBYTIME.Total}</td>
           <td align="center">{$LASTBLOCKSBYTIME.TotalValid}</td>
@@ -43,7 +43,7 @@
           <td align="center">{($LASTBLOCKSBYTIME.Total|default:"0.00" / ($FIRSTBLOCKFOUND / $COINGENTIME)  * 100)|number_format:"2"}%</td>
         </tr>
         <tr>
-          <th align="left" style="padding-left: 15px">Last Hour</td>
+          <th align="left" style="padding-left: 15px">最近1小时</td>
           <td align="center">{(3600 / $COINGENTIME)}</td>
           <td align="center">{$LASTBLOCKSBYTIME.1HourTotal}</td>
           <td align="center">{$LASTBLOCKSBYTIME.1HourValid}</td>
@@ -68,7 +68,7 @@
           <td align="center">{($LASTBLOCKSBYTIME.1HourTotal|default:"0.00" / (3600 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
         </tr>
         <tr>
-          <th align="left" style="padding-left: 15px">Last 24 Hours</td>
+          <th align="left" style="padding-left: 15px">最近24小时</td>
           <td align="center">{(86400 / $COINGENTIME)}</td>
           <td align="center">{$LASTBLOCKSBYTIME.24HourTotal}</td>
           <td align="center">{$LASTBLOCKSBYTIME.24HourValid}</td>
@@ -93,7 +93,7 @@
           <td align="center">{($LASTBLOCKSBYTIME.24HourTotal|default:"0.00" / (86400 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
         </tr>
         <tr>
-          <th align="left" style="padding-left: 15px">Last 7 Days</td>
+          <th align="left" style="padding-left: 15px">最近7天</td>
           <td align="center">{(604800 / $COINGENTIME)}</td>
           <td align="center">{$LASTBLOCKSBYTIME.7DaysTotal}</td>
           <td align="center">{$LASTBLOCKSBYTIME.7DaysValid}</td>
@@ -118,7 +118,7 @@
           <td align="center">{($LASTBLOCKSBYTIME.7DaysTotal|default:"0.00" / (604800 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
         </tr>
         <tr>
-          <th align="left" style="padding-left: 15px">Last 4 Weeks</td>
+          <th align="left" style="padding-left: 15px">最近4周</td>
           <td align="center">{(2419200 / $COINGENTIME)}</td>
           <td align="center">{$LASTBLOCKSBYTIME.4WeeksTotal}</td>
           <td align="center">{$LASTBLOCKSBYTIME.4WeeksValid}</td>
@@ -143,7 +143,7 @@
           <td align="center">{($LASTBLOCKSBYTIME.4WeeksTotal|default:"0.00" / (2419200 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
         </tr>
         <tr>
-          <th align="left" style="padding-left: 15px">Last 12 Month</td>
+          <th align="left" style="padding-left: 15px">最近12月</td>
           <td align="center">{(29030400 / $COINGENTIME)}</td>
           <td align="center">{$LASTBLOCKSBYTIME.12MonthTotal}</td>
           <td align="center">{$LASTBLOCKSBYTIME.12MonthValid}</td>

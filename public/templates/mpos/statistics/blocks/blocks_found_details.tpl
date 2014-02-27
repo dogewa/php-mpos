@@ -59,7 +59,7 @@
       </tr>
 {/section}
     <tr>
-      <td colspan="6" align="right"><b>Totals</b></td>
+      <td colspan="6" align="right"><b>合计</b></td>
       <td align="right">{$totalexpectedshares|number_format}</td>
       {if $GLOBAL.config.payout_system == 'pplns'}<td align="right">{$pplnsshares|number_format}</td>{/if}
       <td align="right">{$totalshares|number_format}</td>
