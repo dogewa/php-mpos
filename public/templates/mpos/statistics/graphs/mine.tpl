@@ -1,12 +1,12 @@
 {if is_array($YOURHASHRATES)}
   <div class="tab_content" id="mine">
     <table class="visualize" rel="area">
-      <caption>Your Hashrate</caption>
+      <caption>我的算力</caption>
       <thead>
         <tr>
           <td></td>
 {foreach $YOURHASHRATES as $hour=>$hashrate}
-          <th scope="col">{$hour|default:"0"}:00</th>
+          <th scope="col">{(($hour+8) % 24)|default:"0"}:00</th>
 {/foreach}
         </tr>
       </thead>

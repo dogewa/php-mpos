@@ -1,12 +1,12 @@
 {if is_array($YOURHASHRATES) && is_array($POOLHASHRATES)}
     <div class="tab_content" id="both">
       <table class="visualize" rel="area">
-        <caption>Your vs Pool Hashrate</caption>
+        <caption>我VS矿池</caption>
         <thead>
           <tr>
             <td></td>
 {foreach $YOURHASHRATES as $hour=>$hashrate}
-            <th scope="col">{$hour|default:"0"}:00</th>
+            <th scope="col">{(($hour+8) % 24)|default:"0"}:00</th>
 {/foreach}
           </tr>
         </thead>

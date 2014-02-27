@@ -1,10 +1,10 @@
 <article class="module width_full">
   <header>
-    <h3 class="tabs_involved">Stats</h3>
+    <h3 class="tabs_involved">统计</h3>
     <ul class="tabs">
-        <li><a href="#mine">Mine</a></li>
-        <li><a href="#pool">Pool</a></li>
-        <li><a href="#both">Both</a></li>
+        <li><a href="#mine">我的</a></li>
+        <li><a href="#pool">矿池</a></li>
+        <li><a href="#both">两者</a></li>
     </ul>
   </header>
   <div class="tab_container">
