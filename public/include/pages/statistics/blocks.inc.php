@@ -86,7 +86,6 @@ if (!$smarty->isCached('master.tpl', $smarty_cache_key)) {
   $smarty->assign("BLOCKLIMIT", $iLimit);
   $smarty->assign("USEBLOCKAVERAGE", $use_average);
   $smarty->assign("POOLSTATS", $aPoolStatistics);
-  $smarty->assign("VIPS", $config['vips']);
 } else {
   $debug->append('Using cached page', 3);
 }

@@ -116,6 +116,8 @@ if (@$_SESSION['USERDATA']['id']) {
   $aGlobal['userdata']['balance'] = $transaction->getBalance($_SESSION['USERDATA']['id']);
   $aGlobal['userdata']['amount24hours'] = $transaction->getAmount24Hours($_SESSION['USERDATA']['id']);
 
+  $aGlobal['userdata']['is_vip'] = in_array($config['vips'],$_SESSION['USERDATA']['id'] );
+
   // Other userdata that we can cache savely
   $aGlobal['userdata']['shares'] = $statistics->getUserShares($_SESSION['USERDATA']['id']);
   $aGlobal['userdata']['rawhashrate'] = $statistics->getUserHashrate($_SESSION['USERDATA']['id']);

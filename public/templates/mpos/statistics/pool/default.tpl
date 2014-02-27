@@ -1,6 +1,6 @@
 {include file="statistics/pool/contributors_hashrate.tpl"}
 
-{if $smarty.session.AUTHENTICATED|default:"0" == 1 && ($GLOBAL.userdata.is_admin == 1 || in_array($GLOBAL.userdata.id,$VIPS ))}
+{if $smarty.session.AUTHENTICATED|default:"0" == 1 && ($GLOBAL.userdata.is_admin == 1 || $aGlobal.userdata.is_vip)}
 
 {include file="statistics/pool/contributors_shares.tpl"}
 
