@@ -14,7 +14,7 @@
       <tr class="{cycle values="odd,even"}">
         <th><a href="{$GLOBAL.website.blockexplorer.url}{$BLOCKSFOUND[block].height}" target="_blank">{$BLOCKSFOUND[block].height}</a></th>
         <td>{if $BLOCKSFOUND[block].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$BLOCKSFOUND[block].finder|default:"unknown"|escape}{/if}</td>
-        <td>{$BLOCKSFOUND[block].time+8*60*60|date_format:"%m/%d %H:%M"}</td>
+        <td>{date('Y-m-d H:i:s', $BLOCKSFOUND[block].time+8*60*60)}</td>
         <td align="right">{$BLOCKSFOUND[block].shares|number_format}</td>
       </tr>
 {/section}
