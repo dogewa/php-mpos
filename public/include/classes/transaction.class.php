@@ -285,7 +285,6 @@ class Transaction extends Base {
         ROUND( sum(amount), 8) AS amount24hours
         FROM transactions
         WHERE account_id = ?
-        AND archived = 0
         AND  UNIX_TIMESTAMP(NOW())-UNIX_TIMESTAMP(timestamp) <= 87000
         AND type IN ('Credit_PPS','Donation_PPS', 'Credit', 'Bonus')
         ");
