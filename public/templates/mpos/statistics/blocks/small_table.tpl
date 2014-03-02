@@ -5,7 +5,7 @@
       <tr>
         <th align="center">块</th>
         <th>发现者</th>
-        <th align="center">实现</th>
+        <th align="center">时间</th>
         <th align="right" style="padding-right: 25px;">实际 Share数</th>
       </tr>
     </thead>
